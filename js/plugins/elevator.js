@@ -21,7 +21,5 @@ function elevatormove(elevatorname) {
         }else if($gameVariables.value(21) < $gameVariables.value(26)){
             console.log('上樓');
         }
-    }else{
-
     }
 }
