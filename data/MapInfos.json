@@ -4,6 +4,6 @@ null,
 {"id":2,"expanded":true,"name":"MAP002","order":1,"parentId":0,"scrollX":1223.3999999999999,"scrollY":2217.9,"quick":false},
 {"id":3,"expanded":false,"name":"COMMON AREA","order":2,"parentId":2,"scrollX":531,"scrollY":998.0999999999999,"quick":false},
 {"id":4,"expanded":false,"name":"MEETING ROOM","order":3,"parentId":2,"scrollX":376.2,"scrollY":279.9,"quick":false},
-{"id":5,"expanded":false,"name":"HALL","order":4,"parentId":2,"scrollX":2925.3333333333335,"scrollY":395.55555555555554,"quick":false},
+{"id":5,"expanded":false,"name":"HALL","order":4,"parentId":2,"scrollX":2918.222222222222,"scrollY":395.55555555555554,"quick":false},
 {"id":6,"expanded":false,"name":"ROOM2001","order":5,"parentId":2,"scrollX":371.4,"scrollY":204.29999999999998,"quick":false}
 ]
