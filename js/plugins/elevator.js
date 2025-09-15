@@ -13,7 +13,7 @@
  */
 
 (() => {
-    function elevatorMove(elevatorName) {
+    function elevatormove(elevatorName) {
         if (elevatorName === 'A') {
             if ($gameVariables.value(21) === $gameVariables.value(26)) {
                 console.log('樓層一樣');
@@ -26,5 +26,5 @@
     }
 
     // 把函式掛到全域，讓事件的腳本可以呼叫
-    window.elevatorMove = elevatorMove;
+    window.elevatormove = elevatormove;
 })();
