@@ -12,14 +12,19 @@
  *
  */
 
-function elevatormove(elevatorname) {
-    if(elevatorname === 'A'){
-        if($gameVariables.value(21) === $gameVariables.value(26)){
-            console.log('樓層一樣');
-        }else if ($gameVariables.value(21) > $gameVariables.value(26)) {
-            console.log('下樓');
-        }else if($gameVariables.value(21) < $gameVariables.value(26)){
-            console.log('上樓');
+(() => {
+    function elevatorMove(elevatorName) {
+        if (elevatorName === 'A') {
+            if ($gameVariables.value(21) === $gameVariables.value(26)) {
+                console.log('樓層一樣');
+            } else if ($gameVariables.value(21) > $gameVariables.value(26)) {
+                console.log('下樓');
+            } else if ($gameVariables.value(21) < $gameVariables.value(26)) {
+                console.log('上樓');
+            }
         }
     }
-}
+
+    // 把函式掛到全域，讓事件的腳本可以呼叫
+    window.elevatorMove = elevatorMove;
+})();
