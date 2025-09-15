@@ -21,6 +21,7 @@ window.elevatormove = function(elevatorName) {
             console.log('樓層一樣');
         } else if ($gameVariables.value(21) > $gameVariables.value(26)) {
             $gameSwitches.setValue(26,true)
+            $gameSwitches.setValue(21,false)
             if(!$gameSwitches.value(21)){
                 while ($gameVariables.value(21) === $gameVariables.value(26)) {
                     $gameVariables.setValue(21,-1)
@@ -30,6 +31,7 @@ window.elevatormove = function(elevatorName) {
             console.log('電梯會下樓');
         } else if ($gameVariables.value(21) < $gameVariables.value(26)) {
             $gameSwitches.setValue(25,true)
+            $gameSwitches.setValue(21,false)
             if(!$gameSwitches.value(21)){
                 while ($gameVariables.value(21) === $gameVariables.value(26)) {
                     $gameVariables.setValue(21,1)
