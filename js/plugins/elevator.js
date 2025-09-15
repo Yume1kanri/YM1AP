@@ -24,7 +24,8 @@ window.elevatormove = function(elevatorName) {
             $gameSwitches.setValue(21,false)
             if(!$gameSwitches.value(21)){
                 while ($gameVariables.value(21) === $gameVariables.value(26)) {
-                    $gameVariables.setValue(21,-1)
+                    $gameVariables.setValue(21,$gameVariables.value(21)-1)
+                    this.wait(120)
                     console.log($gameVariables.value(21));
                 }
             }
@@ -34,7 +35,8 @@ window.elevatormove = function(elevatorName) {
             $gameSwitches.setValue(21,false)
             if(!$gameSwitches.value(21)){
                 while ($gameVariables.value(21) === $gameVariables.value(26)) {
-                    $gameVariables.setValue(21,1)
+                    $gameVariables.setValue(21,$gameVariables.value(21)+1)
+                    this.wait(120)
                     console.log($gameVariables.value(21));
                 }
             }
